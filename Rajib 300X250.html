@@ -1,0 +1,326 @@
+<html>
+<head>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+	background: #eee;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+	border:0;
+	background:#dedede;
+	height:1px;
+}		
+
+header{
+	text-align: center;
+	color: #232323;
+}
+
+header .judul{
+	font-size: 17pt;
+}
+
+header .deskripsi{
+	font-size: 11pt;
+}
+
+.wrap {
+	width: 950px;
+	margin:25px auto;
+}
+
+nav.menu ul {
+	overflow:hidden;
+	color:#fff;
+	list-style: none;
+	float:left;
+	padding:0;
+	width: 650px;
+	margin:0 0 0;
+	background: #1abc9c;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+}
+
+nav.menu ul li {
+	margin:0;
+	float:left;
+}
+
+nav.menu ul a {
+	padding:25px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+nav.menu ul a:hover {
+	text-decoration: underline;
+	background:#16a085;
+}
+
+.sidebar {
+	float:right;
+	width:275px;
+}
+
+.sidebar .widget {
+	padding:25px;
+	margin:0 0 25px;
+	background:#fff;
+	border-bottom: 2px solid #fff;
+	transition: all 0.5s ease;
+}
+
+.sidebar .widget:hover {
+	border-bottom: 2px solid #3498db;
+}
+
+.sidebar .widget h2 {
+	padding:0;
+	margin:0 0 15px;
+	color:#3498db;
+	font-size: 18px;
+	font-weight:800;
+	text-transform: uppercase;
+}
+
+.sidebar .widget p {
+	font-size: 14px;
+}
+
+.sidebar .widget p:last-child {
+	margin:0;
+}
+
+.blog {
+	float:left;
+}
+
+.conteudo {
+	width:600px;
+	padding:25px;
+	margin:25px auto;
+	background: #fff;
+	border:1px solid #dedede;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+}
+
+.conteudo img {
+	min-width: 650px;
+	margin:0 0 25px -25px;
+	max-width: 650px;
+}
+
+.conteudo h1 {
+	padding:0;
+	margin:0 0 15px;
+	font-weight: normal;
+	color: #666;
+	font-family: Georgia;
+}
+
+.conteudo p:last-child {
+	margin: 0;
+}
+
+.conteudo .continue-lendo {
+	color:#000;
+	transition: all 0.5s ease;
+	text-decoration: none;
+	font-weight: 700; 
+}
+
+.conteudo .continue-lendo:hover {
+	margin-left:10px;
+}
+
+.post-info {
+	float: right;
+	font-size: 12px;
+	margin: -10px 0 15px;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px) {
+
+	.header {
+		position:inherit;
+	}
+
+	.wrap {
+		width: 90%;
+		margin:25px auto;
+	}
+	.sidebar {
+		width:100%;
+		margin:25px 0 0;
+		float:right;
+	}
+
+	.sidebar .widget {
+		padding:5%;
+	}
+
+	nav.menu ul {
+		width: 100%;
+	}
+
+	nav.menu ul {
+		float:inherit;
+	}
+
+	nav.menu ul li {
+		float:inherit;
+		margin:0;
+	}
+
+	nav.menu ul a {
+		padding:15px;
+		font-size: 16px;
+		border-top:1px solid #1abf9f;
+		border-bottom:1px solid #16a085;
+	}
+
+	.blog {
+		width:90%;
+	}
+
+	.conteudo {
+		float:inherit;
+		margin:0 auto 25px;
+		width:101%;
+		border:1px solid #dedede;
+		padding:5%;  
+		background: #fff;
+	}
+
+	.conteudo img {
+		max-width: 110%;
+		margin:0 0 25px -5%;
+		min-width: 110%;
+	}
+
+	.conteudo .continue-lendo:hover {
+		margin-left:0;
+	}
+
+
+}
+
+@media screen and (max-width: 460px) {
+
+	nav.menu ul a {
+		padding:15px;
+		font-size: 14px;
+	}
+
+	.sidebar {
+		display:none
+	}
+	.post-info {
+		display:none;
+	}
+
+	.conteudo {
+		margin:25px auto;
+	}
+
+	.conteudo img {
+		margin:-5% 0 25px -5%;
+	}			
+}
+
+.gakodejarwo { display:block; background:#eee; margin:20px; }
+
+    .gakodejarwo .keluar-jarwo, .gakodejarwo .keluar-jarwo-lengkap { float:right; width:16px; height:15px; cursor:pointer }
+    .gakodejarwo .keluar-jarwo-lengkap { display:none; margin-top:-15px }
+    .keluar-jarwo:hover .keluar-jarwo-lengkap,
+    .info-jarwo:hover .info-jarwo-lengkap
+    { display:block!important }
+
+    .gakodejarwo .info-jarwo { float:right; width:16px; height:15px }
+    .gakodejarwo .info-jarwo-lengkap { float:right; width:96px; height:15px; display:none; margin-top:-15px; max-width:100px!important }
+
+    .gakodejarwo .buka-jarwo { background:#19abea; color:#fff!important; margin-top:20px!important }
+    .gakodejarwo .buka-jarwo:hover { background:#1794cb }
+    .gakodejarwo .hilangkan-jarwo { background:#fff; color:#9E9EA6!important }
+    .gakodejarwo .hilangkan-jarwo:hover { background:#eee }
+    .gakodejarwo #tutup-jarwo { display:none; text-align:center; padding:15px 10px; font-size:16px; font-family:arial; margin:30px 0 }
+    .gakodejarwo .blog { font-family:lusitana,serif; font-weight:bold; color:#222!important }
+
+    .gakodejarwo .buka-jarwo, .gakodejarwo .hilangkan-jarwo { display:block; padding:3px; box-shadow:0px 0px 2px rgba(0,0,0,0.12), 0px 1px 3px rgba(0,0,0,0.26) !important; cursor:pointer; margin:0 20px 5px; border-radius:5px; }
+
+
+    /* Slot */
+
+    .kotaksedang-jarwo { max-width:300px; height:250px; border:1px solid #eee }
+
+
+    /* Campuran */
+
+    .kotaksedang-jarwo .slot2-jarwo .judul-jarwo,
+    .kotaksedang-jarwo .slot2-jarwo .subjudul-jarwo,
+    .kotaksedang-jarwo .slot3-jarwo .deskripsi-jarwo,
+    .kotaksedang-jarwo .slot3-jarwo .link-jarwo
+     { color:#fff; font-family:Roboto, Arial, sans-serif; letter-spacing:-0.1px; position:absolute; }
+
+    .kotaksedang-jarwo .slot2-jarwo .subjudul-jarwo,
+    .kotaksedang-jarwo .slot3-jarwo .deskripsi-jarwo,
+    .kotaksedang-jarwo .slot3-jarwo .link-jarwo
+     { position:absolute; font-size:12px; }
+
+    .kotaksedang-jarwo .slot3-jarwo .deskripsi-jarwo,
+    .kotaksedang-jarwo .slot3-jarwo .link-jarwo
+     { max-width:200px; }
+
+</style>
+</head>
+<body>
+ <div class='gakodejarwo kotaksedang-jarwo' id='gakodejarwo'>
+    <div id="buka-jarwo">
+
+    <div class='keluar-jarwo'>
+    <a onclick="show('tutup-jarwo')">
+    <img class='keluar-jarwo' src='https://tpc.googlesyndication.com/pagead/images/x_button_blue2.svg'/>
+    <img class='keluar-jarwo-lengkap' src='https://tpc.googlesyndication.com/pagead/images/x_button_dark.svg' title='Sembunyikan Iklan'/>
+    </a></div>
+
+    <div class='info-jarwo'>
+    <img class='info-jarwo' src='https://4.bp.blogspot.com/-V5hKVoPKk2s/WWDqyFi1gXI/AAAAAAAAArs/h7akG8GWpgooMelhwwP3oKOh0bKZ7m7hQCLcBGAs/s1600/info.PNG'/>
+    <a href='http://www.kodejarwo.com' target='_blank'>
+    <img class='info-jarwo-lengkap' src='https://1.bp.blogspot.com/-wbM3FDFDBew/WghBjxe729I/AAAAAAAABFA/TDASvJ7RFoIDAID90g57K3rBTcLkjMHdQCPcBGAYYCw/s1600/info2-kodejarwo.PNG' title='Iklan ini disediakan oleh Blog Kode Jarwo'/></a>
+    </div>
+
+
+  <script type="text/javascript" src="//effective-ads.com/display/js/ads.js?13227&2023&300&250&0"></script>
+     <div class='tombol-jarwo'>
+      <svg width="100%" style="width:15px; margin-left:19px" height="100%" viewbox="0 0 26 42">
+       <polyline stroke-miterlimit="10" stroke-width="5" stroke="rgba(255,255,255,1)" fill="none" points="6,3 24,21 6,39"></polyline>
+      </svg>
+     </div>
+    
+    </div>
+    <div id="tutup-jarwo">Ads by <a class='blog'>Adl AdMedia</a> <a class='buka-jarwo' onclick="show('buka-jarwo')">Display Ads Again</a>
+    <a class='hilangkan-jarwo' onclick="hide('gakodejarwo')">Close Ads</a></div>
+    </div>
+
+    <script>
+    function show(e){var t=document.getElementById(e);currentDiv.style.display="none",t.style.display="block",currentDiv=t}var currentDiv=document.getElementById("buka-jarwo");
+    function hide(target) {
+        document.getElementById(target).style.display = 'none';
+    }
+    </script>
+</body>
+</html>
