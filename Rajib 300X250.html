@@ -1,185 +1,22 @@
-<html>
-<head>
+html>
 <style>
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
-
-body {
-	background: #fff;
-	margin:0;
-	font-family: 'Open Sans', sans-serif;
-}
-
-
-
-
-@media screen and (max-width: 960px) {
-
-	.header {
-		position:inherit;
-	}
-
-	.wrap {
-		width: 90%;
-		margin:25px auto;
-	}
-	.sidebar {
-		width:100%;
-		margin:25px 0 0;
-		float:right;
-	}
-
-	.sidebar .widget {
-		padding:5%;
-	}
-
-	nav.menu ul {
-		width: 100%;
-	}
-
-	nav.menu ul {
-		float:inherit;
-	}
-
-	nav.menu ul li {
-		float:inherit;
-		margin:0;
-	}
-
-	nav.menu ul a {
-		padding:15px;
-		font-size: 16px;
-		border-top:1px solid #1abf9f;
-		border-bottom:1px solid #16a085;
-	}
-
-	.blog {
-		width:90%;
-	}
-
-	.conteudo {
-		float:inherit;
-		margin:0 auto 25px;
-		width:101%;
-		border:1px solid #dedede;
-		padding:5%;  
-		background: #fff;
-	}
-
-	.conteudo img {
-		max-width: 110%;
-		margin:0 0 25px -5%;
-		min-width: 110%;
-	}
-
-	.conteudo .continue-lendo:hover {
-		margin-left:0;
-	}
-
-
-}
-
-@media screen and (max-width: 460px) {
-
-	nav.menu ul a {
-		padding:15px;
-		font-size: 14px;
-	}
-
-	.sidebar {
-		display:none
-	}
-	.post-info {
-		display:none;
-	}
-
-	.conteudo {
-		margin:25px auto;
-	}
-
-	.conteudo img {
-		margin:-5% 0 25px -5%;
-	}			
-}
-
-.gakodejarwo { display:block; background:#eee; margin:20px; }
-
-    .gakodejarwo .keluar-jarwo, .gakodejarwo .keluar-jarwo-lengkap { float:right; width:16px; height:15px; cursor:pointer }
-    .gakodejarwo .keluar-jarwo-lengkap { display:none; margin-top:-15px }
-    .keluar-jarwo:hover .keluar-jarwo-lengkap,
-    .info-jarwo:hover .info-jarwo-lengkap
-    { display:block!important }
-
-    .gakodejarwo .info-jarwo { float:right; width:16px; height:15px }
-    .gakodejarwo .info-jarwo-lengkap { float:right; width:96px; height:15px; display:none; margin-top:-15px; max-width:100px!important }
-
-    .gakodejarwo .buka-jarwo { background:#19abea; color:#fff!important; margin-top:20px!important }
-    .gakodejarwo .buka-jarwo:hover { background:#1794cb }
-    .gakodejarwo .hilangkan-jarwo { background:#fff; color:#9E9EA6!important }
-    .gakodejarwo .hilangkan-jarwo:hover { background:#eee }
-    .gakodejarwo #tutup-jarwo { display:none; text-align:center; padding:15px 10px; font-size:16px; font-family:arial; margin:30px 0 }
-    .gakodejarwo .blog { font-family:lusitana,serif; font-weight:bold; color:#222!important }
-
-    .gakodejarwo .buka-jarwo, .gakodejarwo .hilangkan-jarwo { display:block; padding:3px; box-shadow:0px 0px 2px rgba(0,0,0,0.12), 0px 1px 3px rgba(0,0,0,0.26) !important; cursor:pointer; margin:0 20px 5px; border-radius:5px; }
-
-
-    /* Slot */
-
-    .kotaksedang-jarwo { max-width:300px; height:250px; border:1px solid #eee }
-
-
-    /* Campuran */
-
-    .kotaksedang-jarwo .slot2-jarwo .judul-jarwo,
-    .kotaksedang-jarwo .slot2-jarwo .subjudul-jarwo,
-    .kotaksedang-jarwo .slot3-jarwo .deskripsi-jarwo,
-    .kotaksedang-jarwo .slot3-jarwo .link-jarwo
-     { color:#fff; font-family:Roboto, Arial, sans-serif; letter-spacing:-0.1px; position:absolute; }
-
-    .kotaksedang-jarwo .slot2-jarwo .subjudul-jarwo,
-    .kotaksedang-jarwo .slot3-jarwo .deskripsi-jarwo,
-    .kotaksedang-jarwo .slot3-jarwo .link-jarwo
-     { position:absolute; font-size:12px; }
-
-    .kotaksedang-jarwo .slot3-jarwo .deskripsi-jarwo,
-    .kotaksedang-jarwo .slot3-jarwo .link-jarwo
-     { max-width:200px; }
-
+.iklanads{position:relative;width:300px;height:250px;margin:0 auto;overflow: hidden;}
+.infoads{position: absolute;top: 0;right: 0;
+background:#D3D3D3 url(http://3.bp.blogspot.com/-4CwiCfZwE9g/VMOUrZFNhKI/AAAAAAAAAxE/S1Qarl9oIn0/s320/googleads.png) no-repeat center;
+color: #fff;width:17px;height:17px;cursor: pointer;}
+.infoads:hover p{display:block;transform-origin: 100% 0%;animation: fadeIn 0.3s ease-in-out;}
+.infoads p{  display: none;background-color: #D3D3D3;
+padding: 1px 6px;position: absolute;top: -11px;right: 15px;width: 100px;
+  border-radius: 0 0 0 9px;color: #000;font: normal 11px arial, sans-serif;} 
 </style>
-</head>
-<body>
- <div class='gakodejarwo kotaksedang-jarwo' id='gakodejarwo'>
-    <div id="buka-jarwo">
-
-    <div class='keluar-jarwo'>
-    <a onclick="show('tutup-jarwo')">
-    <img class='keluar-jarwo' src='https://tpc.googlesyndication.com/pagead/images/x_button_blue2.svg'/>
-    <img class='keluar-jarwo-lengkap' src='https://tpc.googlesyndication.com/pagead/images/x_button_dark.svg' title='Sembunyikan Iklan'/>
-    </a></div>
-
-    <div class='info-jarwo'>
-    <img class='info-jarwo' src='https://4.bp.blogspot.com/-V5hKVoPKk2s/WWDqyFi1gXI/AAAAAAAAArs/h7akG8GWpgooMelhwwP3oKOh0bKZ7m7hQCLcBGAs/s1600/info.PNG'/>
-    <a href='http://www.kodejarwo.com' target='_blank'>
-    <img class='info-jarwo-lengkap' src='https://1.bp.blogspot.com/-wbM3FDFDBew/WghBjxe729I/AAAAAAAABFA/TDASvJ7RFoIDAID90g57K3rBTcLkjMHdQCPcBGAYYCw/s1600/info2-kodejarwo.PNG' title='Iklan ini disediakan oleh Blog Kode Jarwo'/></a>
+</body>
+<div class="iklanads">
+  <!-- EffectiveAds - Iklan Tampilan Kode -->
+<script type="text/javascript" src="//effective-ads.com/display/js/ads.js?13227&2023&300&250&0"></script>
+<!-- EffectiveAds - Iklan Tampilan Kode -->
+    <div class="infoads">
+        <a href="http://www.androedland.net/p/advertise.html" target="_blank" title="Ads By Androedland"><p>Ads By ADL</p></a>
     </div>
-
-
-  <script type="text/javascript" src="//effective-ads.com/display/js/ads.js?13227&2023&300&250&0"></script>
-     <div class='tombol-jarwo'>
-      <svg width="100%" style="width:15px; margin-left:19px" height="100%" viewbox="0 0 26 42">
-       <polyline stroke-miterlimit="10" stroke-width="5" stroke="rgba(255,255,255,1)" fill="none" points="6,3 24,21 6,39"></polyline>
-      </svg>
-     </div>
-    
-    </div>
-    <div id="tutup-jarwo">Ads by <a class='blog'>Adl AdMedia</a> <a class='buka-jarwo' onclick="show('buka-jarwo')">Display Ads Again</a>
-    <a class='hilangkan-jarwo' onclick="hide('gakodejarwo')">Close Ads</a></div>
-    </div>
-
-    <script>
-    function show(e){var t=document.getElementById(e);currentDiv.style.display="none",t.style.display="block",currentDiv=t}var currentDiv=document.getElementById("buka-jarwo");
-    function hide(target) {
-        document.getElementById(target).style.display = 'none';
-    }
-    </script>
+</div>
 </body>
 </html>
