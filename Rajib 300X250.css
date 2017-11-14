@@ -1,6 +1,6 @@
-<html>
+
 <style>
-.iklanads{position:relative;width:300px;height:250px;margin:0 auto;overflow: hidden;}
+.iklanads{position:relative; margin:0 auto;overflow: hidden;}
 .infoads{position: absolute;top: 0;right: 0;
 background:#D3D3D3 url(http://3.bp.blogspot.com/-4CwiCfZwE9g/VMOUrZFNhKI/AAAAAAAAAxE/S1Qarl9oIn0/s320/googleads.png);
 color: #fff;width:17px;height:17px;cursor: pointer;}
@@ -9,12 +9,3 @@ color: #fff;width:17px;height:17px;cursor: pointer;}
 padding: 1px 6px;position: absolute;top: -11px;right: 15px;width: 100px;
   border-radius: 0 0 0 9px;color: #000;font: normal 11px arial, sans-serif;} 
 </style>
-</body>
-<div class="iklanads">
-<script type="text/javascript" src="//effective-ads.com/display/js/ads.js?13227&2023&300&250&0"></script>
-    <div class="infoads">
-        <a href="http://www.androedland.net/p/advertise.html" target="_blank" title="Ads By Androedland"><p>Ads By ADL</p></a>
-    </div>
-</div>
-</body>
-</html>
